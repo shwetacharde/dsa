@@ -75,12 +75,24 @@ class Result {
      *
      */
 
-    public static SinglyLinkedListNode reverse(SinglyLinkedListNode llist) {
-    // Write your code here
-
-    }
+    public static SinglyLinkedListNode reverse(SinglyLinkedListNode head) {
+        SinglyLinkedListNode next = null;
+        SinglyLinkedListNode current = head;
+        SinglyLinkedListNode previous = null;
+        while(current!=null)
+        {
+            next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+        SinglyLinkedListNode singlyLinkedListNode = previous;
+        return singlyLinkedListNode;
 
 }
+
+
+    }
 
 public class Solution {
     public static void main(String[] args) throws IOException {
