@@ -1,4 +1,4 @@
-# this is a implementation of a linked list using object orientation
+# this is a implementation of a stack with a linked list using object orientation
 
 # first we create a Node class, this class is responsible for each new node that the list will contain
 class Node():
